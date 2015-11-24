@@ -19,6 +19,7 @@ extension UIView {
         if let delegate: AnyObject = completionDelegate {
             rotateAnimation.delegate = delegate
         }
+        
         self.layer.addAnimation(rotateAnimation, forKey: nil)
     }
 }
@@ -48,7 +49,6 @@ class ViewController: UIViewController {
         passwordField.alpha = 0.5
         
         self.signupButton.layer.cornerRadius = 5.0
-        self.signupButton.backgroundColor = UIColor.blueColor()
         self.signupButton.layer.borderColor = UIColor.yellowColor().CGColor
         self.signupButton.layer.borderWidth = 1.5
         

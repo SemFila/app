@@ -13,6 +13,7 @@
 		3FB9691B1C046F53001FB100 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FB9691A1C046F53001FB100 /* Assets.xcassets */; };
 		3FB9691E1C046F53001FB100 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FB9691C1C046F53001FB100 /* LaunchScreen.storyboard */; };
 		3FB969291C047793001FB100 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FB969281C047793001FB100 /* Main.storyboard */; };
+		3FB9692B1C0478CA001FB100 /* bgImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FB9692A1C0478CA001FB100 /* bgImage.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		3FB9691D1C046F53001FB100 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FB9691F1C046F53001FB100 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FB969281C047793001FB100 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		3FB9692A1C0478CA001FB100 /* bgImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bgImage.jpg; path = ../../bgImage.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				3FB969101C046F53001FB100 /* AppDelegate.swift */,
 				3FB969121C046F53001FB100 /* ViewController.swift */,
 				3FB969281C047793001FB100 /* Main.storyboard */,
+				3FB9692A1C0478CA001FB100 /* bgImage.jpg */,
 				3FB9691A1C046F53001FB100 /* Assets.xcassets */,
 				3FB9691C1C046F53001FB100 /* LaunchScreen.storyboard */,
 				3FB9691F1C046F53001FB100 /* Info.plist */,
@@ -126,6 +129,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FB9692B1C0478CA001FB100 /* bgImage.jpg in Resources */,
 				3FB9691E1C046F53001FB100 /* LaunchScreen.storyboard in Resources */,
 				3FB969291C047793001FB100 /* Main.storyboard in Resources */,
 				3FB9691B1C046F53001FB100 /* Assets.xcassets in Resources */,
