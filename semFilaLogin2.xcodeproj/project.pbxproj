@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		3FB969111C046F53001FB100 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB969101C046F53001FB100 /* AppDelegate.swift */; };
 		3FB969131C046F53001FB100 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB969121C046F53001FB100 /* ViewController.swift */; };
-		3FB969161C046F53001FB100 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FB969141C046F53001FB100 /* Main.storyboard */; };
 		3FB969191C046F53001FB100 /* semFilaLogin2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3FB969171C046F53001FB100 /* semFilaLogin2.xcdatamodeld */; };
 		3FB9691B1C046F53001FB100 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FB9691A1C046F53001FB100 /* Assets.xcassets */; };
 		3FB9691E1C046F53001FB100 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FB9691C1C046F53001FB100 /* LaunchScreen.storyboard */; };
+		3FB969271C046FEA001FB100 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FB969251C046FEA001FB100 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3FB9690D1C046F53001FB100 /* semFilaLogin2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = semFilaLogin2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FB969101C046F53001FB100 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FB969121C046F53001FB100 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3FB969151C046F53001FB100 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3FB969181C046F53001FB100 /* semFilaLogin2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = semFilaLogin2.xcdatamodel; sourceTree = "<group>"; };
 		3FB9691A1C046F53001FB100 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FB9691D1C046F53001FB100 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FB9691F1C046F53001FB100 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FB969261C046FEA001FB100 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../../semFilaLogIn/semFilaLogIn/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +58,7 @@
 			children = (
 				3FB969101C046F53001FB100 /* AppDelegate.swift */,
 				3FB969121C046F53001FB100 /* ViewController.swift */,
-				3FB969141C046F53001FB100 /* Main.storyboard */,
+				3FB969251C046FEA001FB100 /* Main.storyboard */,
 				3FB9691A1C046F53001FB100 /* Assets.xcassets */,
 				3FB9691C1C046F53001FB100 /* LaunchScreen.storyboard */,
 				3FB9691F1C046F53001FB100 /* Info.plist */,
@@ -99,6 +99,7 @@
 				TargetAttributes = {
 					3FB9690C1C046F53001FB100 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = FTFZ7M5NTY;
 					};
 				};
 			};
@@ -125,9 +126,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FB969271C046FEA001FB100 /* Main.storyboard in Resources */,
 				3FB9691E1C046F53001FB100 /* LaunchScreen.storyboard in Resources */,
 				3FB9691B1C046F53001FB100 /* Assets.xcassets in Resources */,
-				3FB969161C046F53001FB100 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,20 +148,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3FB969141C046F53001FB100 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3FB969151C046F53001FB100 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3FB9691C1C046F53001FB100 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				3FB9691D1C046F53001FB100 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3FB969251C046FEA001FB100 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FB969261C046FEA001FB100 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -253,6 +254,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = semFilaLogin2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hackGENiOS.semFilaLogin2;
@@ -264,6 +266,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = semFilaLogin2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hackGENiOS.semFilaLogin2;
