@@ -12,9 +12,12 @@
 		3FB969191C046F53001FB100 /* semFilaLogin2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3FB969171C046F53001FB100 /* semFilaLogin2.xcdatamodeld */; };
 		3FB9691B1C046F53001FB100 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FB9691A1C046F53001FB100 /* Assets.xcassets */; };
 		3FB9691E1C046F53001FB100 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FB9691C1C046F53001FB100 /* LaunchScreen.storyboard */; };
-		3FB969291C047793001FB100 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FB969281C047793001FB100 /* Main.storyboard */; };
 		3FB9692B1C0478CA001FB100 /* bgImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FB9692A1C0478CA001FB100 /* bgImage.jpg */; };
 		3FB9692E1C047DE3001FB100 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB9692D1C047DE3001FB100 /* CustomButton.swift */; };
+		3FB969321C048659001FB100 /* Usuario+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB969301C048659001FB100 /* Usuario+CoreDataProperties.swift */; };
+		3FB969331C048659001FB100 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB969311C048659001FB100 /* Usuario.swift */; };
+		3FB969391C0496EF001FB100 /* CadastroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB969381C0496EF001FB100 /* CadastroViewController.swift */; };
+		3FB9693B1C049AD1001FB100 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FB9693A1C049AD1001FB100 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,9 +28,12 @@
 		3FB9691A1C046F53001FB100 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FB9691D1C046F53001FB100 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FB9691F1C046F53001FB100 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3FB969281C047793001FB100 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		3FB9692A1C0478CA001FB100 /* bgImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bgImage.jpg; path = ../../bgImage.jpg; sourceTree = "<group>"; };
 		3FB9692D1C047DE3001FB100 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		3FB969301C048659001FB100 /* Usuario+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Usuario+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3FB969311C048659001FB100 /* Usuario.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
+		3FB969381C0496EF001FB100 /* CadastroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CadastroViewController.swift; sourceTree = "<group>"; };
+		3FB9693A1C049AD1001FB100 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../../.Trash/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +50,8 @@
 		3FB969041C046F53001FB100 = {
 			isa = PBXGroup;
 			children = (
+				3FB969301C048659001FB100 /* Usuario+CoreDataProperties.swift */,
+				3FB969311C048659001FB100 /* Usuario.swift */,
 				3FB9690F1C046F53001FB100 /* semFilaLogin2 */,
 				3FB9690E1C046F53001FB100 /* Products */,
 			);
@@ -62,7 +70,8 @@
 			children = (
 				3FB969101C046F53001FB100 /* AppDelegate.swift */,
 				3FB969121C046F53001FB100 /* ViewController.swift */,
-				3FB969281C047793001FB100 /* Main.storyboard */,
+				3FB9693A1C049AD1001FB100 /* Main.storyboard */,
+				3FB9692F1C0482D4001FB100 /* CadastroView */,
 				3FB9692C1C047DC8001FB100 /* LoginScreen */,
 				3FB9692A1C0478CA001FB100 /* bgImage.jpg */,
 				3FB9691A1C046F53001FB100 /* Assets.xcassets */,
@@ -79,6 +88,14 @@
 				3FB9692D1C047DE3001FB100 /* CustomButton.swift */,
 			);
 			name = LoginScreen;
+			sourceTree = "<group>";
+		};
+		3FB9692F1C0482D4001FB100 /* CadastroView */ = {
+			isa = PBXGroup;
+			children = (
+				3FB969381C0496EF001FB100 /* CadastroViewController.swift */,
+			);
+			name = CadastroView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,8 +159,8 @@
 			files = (
 				3FB9692B1C0478CA001FB100 /* bgImage.jpg in Resources */,
 				3FB9691E1C046F53001FB100 /* LaunchScreen.storyboard in Resources */,
-				3FB969291C047793001FB100 /* Main.storyboard in Resources */,
 				3FB9691B1C046F53001FB100 /* Assets.xcassets in Resources */,
+				3FB9693B1C049AD1001FB100 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,9 +171,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FB969321C048659001FB100 /* Usuario+CoreDataProperties.swift in Sources */,
 				3FB9692E1C047DE3001FB100 /* CustomButton.swift in Sources */,
+				3FB969331C048659001FB100 /* Usuario.swift in Sources */,
 				3FB969131C046F53001FB100 /* ViewController.swift in Sources */,
 				3FB969191C046F53001FB100 /* semFilaLogin2.xcdatamodeld in Sources */,
+				3FB969391C0496EF001FB100 /* CadastroViewController.swift in Sources */,
 				3FB969111C046F53001FB100 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,6 +8,7 @@
 
 import UIKit
 import Foundation
+import CoreData
 
 extension UIView {
     func rotate360Degrees(duration: CFTimeInterval = 1.0, completionDelegate: AnyObject? = nil) {
@@ -60,7 +61,7 @@ class ViewController: UIViewController {
     }
     
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewWillAppear(animated: Bool) {
         topLabel.center.y -= self.view.bounds.width
         nameField.center.x -= self.view.bounds.width
         passwordField.center.x += self.view.bounds.width
