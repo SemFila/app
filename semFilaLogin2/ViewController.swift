@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 extension UIView {
     func rotate360Degrees(duration: CFTimeInterval = 1.5, completionDelegate: AnyObject? = nil) {
@@ -48,6 +49,8 @@ class ViewController: UIViewController {
         
         self.signupButton.layer.cornerRadius = 5.0
         self.signupButton.backgroundColor = UIColor.blueColor()
+        self.signupButton.layer.borderColor = UIColor.yellowColor().CGColor
+        self.signupButton.layer.borderWidth = 1.5
         
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
         view.addGestureRecognizer(tap)
