@@ -10,7 +10,7 @@ import UIKit
 import Foundation
 
 extension UIView {
-    func rotate360Degrees(duration: CFTimeInterval = 1.5, completionDelegate: AnyObject? = nil) {
+    func rotate360Degrees(duration: CFTimeInterval = 1.0, completionDelegate: AnyObject? = nil) {
         let rotateAnimation = CABasicAnimation(keyPath: "transform.rotation")
         rotateAnimation.fromValue = 0.0
         rotateAnimation.toValue = CGFloat(M_PI)*2
@@ -34,6 +34,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var signupButton: UIButton!
     @IBOutlet weak var signinButton: UIButton!
+    @IBOutlet weak var facebookButton: UIButton!
     
     @IBOutlet weak var orLabel: UILabel!
     
@@ -47,10 +48,6 @@ class ViewController: UIViewController {
         
         nameField.alpha = 0.5
         passwordField.alpha = 0.5
-        
-        self.signupButton.layer.cornerRadius = 5.0
-        self.signupButton.layer.borderColor = UIColor.yellowColor().CGColor
-        self.signupButton.layer.borderWidth = 1.5
         
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
         view.addGestureRecognizer(tap)
@@ -67,35 +64,40 @@ class ViewController: UIViewController {
         topLabel.center.y -= self.view.bounds.width
         nameField.center.x -= self.view.bounds.width
         passwordField.center.x += self.view.bounds.width
-        signupButton.center.x -= self.view.bounds.width
-        signinButton.center.x += self.view.bounds.width
+        signupButton.alpha = 0.0
+        signinButton.alpha = 0.0
+        facebookButton.alpha = 0.0
         orLabel.center.y += self.view.bounds.width
         
-        UIView.animateWithDuration(1.5, delay: 0.2, options: [.CurveEaseOut], animations: {
+        UIView.animateWithDuration(1.0, delay: 0.2, options: [.CurveEaseOut], animations: {
             self.topLabel.center.y += self.view.bounds.width
             }, completion: nil)
         
-        UIView.animateWithDuration(1.5, delay: 0.2, options: [.CurveEaseOut], animations: {
+        UIView.animateWithDuration(1.0, delay: 0.2, options: [.CurveEaseOut], animations: {
             self.nameField.center.x += self.view.bounds.width
             }, completion: nil)
         
-        UIView.animateWithDuration(1.5, delay: 0.2, options: [.CurveEaseOut], animations: {
+        UIView.animateWithDuration(1.0, delay: 0.2, options: [.CurveEaseOut], animations: {
             self.passwordField.center.x -= self.view.bounds.width
             }, completion: nil)
         
-        UIView.animateWithDuration(1.5, delay: 0.2, options: [.CurveEaseOut], animations: {
-            self.signupButton.center.x += self.view.bounds.width
-            }, completion: nil)
-        
-        UIView.animateWithDuration(1.5, delay: 0.2, options: [.CurveEaseOut], animations: {
-            self.signinButton.center.x -= self.view.bounds.width
-            }, completion: nil)
-        
-        UIView.animateWithDuration(1.5, delay: 0.2, options: [.CurveEaseOut], animations: {
+        UIView.animateWithDuration(1.0, delay: 0.2, options: [.CurveEaseOut], animations: {
             self.orLabel.center.y -= self.view.bounds.width
             }, completion: nil)
         
         self.orLabel.rotate360Degrees()
+        
+        UIView.animateWithDuration(1.0, delay: 1.2, options: [.CurveEaseOut], animations: {
+            self.signinButton.alpha = 1.0
+            }, completion: nil)
+        
+        UIView.animateWithDuration(1.0, delay: 1.3, options: [.CurveEaseOut], animations: {
+            self.signupButton.alpha = 1.0
+            }, completion: nil)
+        
+        UIView.animateWithDuration(1.0, delay: 1.4, options: [.CurveEaseOut], animations: {
+            self.facebookButton.alpha = 1.0
+            }, completion: nil)
         
     }
     

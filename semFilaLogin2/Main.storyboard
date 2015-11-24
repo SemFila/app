@@ -23,7 +23,7 @@
                                 <animations/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZYh-m4-pUN">
-                                <rect key="frame" x="240" y="228" width="121" height="36"/>
+                                <rect key="frame" x="240.5" y="228" width="120.5" height="36"/>
                                 <animations/>
                                 <attributedString key="attributedText">
                                     <fragment content="Sem Fila">
@@ -48,10 +48,10 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Hh-Ae-a2T">
-                                <rect key="frame" x="436" y="363" width="54" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Hh-Ae-a2T" customClass="CustomButton" customModule="semFilaLogin2" customModuleProvider="target">
+                                <rect key="frame" x="443" y="363" width="47" height="30"/>
                                 <animations/>
-                                <state key="normal" title="SIGN IN"/>
+                                <state key="normal" title="Sign In"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J1A-hx-xB5">
                                 <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
@@ -59,18 +59,18 @@
                                 <state key="normal" title="Button"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="inD-yR-Wxd">
-                                <rect key="frame" x="288" y="413" width="24" height="21"/>
+                                <rect key="frame" x="288.5" y="413" width="23.5" height="20.5"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="swx-vz-KQU">
-                                <rect key="frame" x="277" y="460" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="swx-vz-KQU" customClass="CustomButton" customModule="semFilaLogin2" customModuleProvider="target">
+                                <rect key="frame" x="277" y="459.5" width="46" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Button"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4W-xJ-gSj">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4W-xJ-gSj" customClass="CustomButton" customModule="semFilaLogin2" customModuleProvider="target">
                                 <rect key="frame" x="110" y="363" width="55" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Sign Up"/>
@@ -106,6 +106,7 @@
                     <navigationItem key="navigationItem" id="0iS-5V-QQH"/>
                     <connections>
                         <outlet property="bgImage" destination="Fj6-Pi-kiR" id="HwB-cO-eag"/>
+                        <outlet property="facebookButton" destination="swx-vz-KQU" id="QOm-Xc-D2i"/>
                         <outlet property="nameField" destination="HjQ-Qh-str" id="NiQ-DL-lpg"/>
                         <outlet property="orLabel" destination="inD-yR-Wxd" id="tOj-s4-GYu"/>
                         <outlet property="passwordField" destination="JBH-Es-yKk" id="yiJ-SW-W4y"/>

@@ -14,6 +14,7 @@
 		3FB9691E1C046F53001FB100 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FB9691C1C046F53001FB100 /* LaunchScreen.storyboard */; };
 		3FB969291C047793001FB100 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FB969281C047793001FB100 /* Main.storyboard */; };
 		3FB9692B1C0478CA001FB100 /* bgImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FB9692A1C0478CA001FB100 /* bgImage.jpg */; };
+		3FB9692E1C047DE3001FB100 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB9692D1C047DE3001FB100 /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		3FB9691F1C046F53001FB100 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FB969281C047793001FB100 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		3FB9692A1C0478CA001FB100 /* bgImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bgImage.jpg; path = ../../bgImage.jpg; sourceTree = "<group>"; };
+		3FB9692D1C047DE3001FB100 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				3FB969101C046F53001FB100 /* AppDelegate.swift */,
 				3FB969121C046F53001FB100 /* ViewController.swift */,
 				3FB969281C047793001FB100 /* Main.storyboard */,
+				3FB9692C1C047DC8001FB100 /* LoginScreen */,
 				3FB9692A1C0478CA001FB100 /* bgImage.jpg */,
 				3FB9691A1C046F53001FB100 /* Assets.xcassets */,
 				3FB9691C1C046F53001FB100 /* LaunchScreen.storyboard */,
@@ -68,6 +71,14 @@
 				3FB969171C046F53001FB100 /* semFilaLogin2.xcdatamodeld */,
 			);
 			path = semFilaLogin2;
+			sourceTree = "<group>";
+		};
+		3FB9692C1C047DC8001FB100 /* LoginScreen */ = {
+			isa = PBXGroup;
+			children = (
+				3FB9692D1C047DE3001FB100 /* CustomButton.swift */,
+			);
+			name = LoginScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FB9692E1C047DE3001FB100 /* CustomButton.swift in Sources */,
 				3FB969131C046F53001FB100 /* ViewController.swift in Sources */,
 				3FB969191C046F53001FB100 /* semFilaLogin2.xcdatamodeld in Sources */,
 				3FB969111C046F53001FB100 /* AppDelegate.swift in Sources */,
